@@ -32,7 +32,7 @@ def get_report(path: str, word_count: int, char_counts: list[tuple[str, int]]) -
     return f"--- Begin report of {path} ---\n{word_count} words found in the document\n\n{get_char_count_lines(char_counts)}--- End report ---"
 
 
-def main() -> int:
+def main() -> None:
     text_path = "books/frankenstein.txt"
     with open(text_path) as f:
         file_contents = f.read()
